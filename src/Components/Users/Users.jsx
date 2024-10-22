@@ -44,7 +44,7 @@ function Users(){
 
       useEffect(() => {
         // Fetch appointments from the backend
-        axios.get('http://localhost:8002/api/users')
+        axios.get('https://medicarebackend-tk87.onrender.com/api/users')
           .then(response => setUsers(response.data))
           .catch(error => console.error('Error fetching appointments:', error));
 

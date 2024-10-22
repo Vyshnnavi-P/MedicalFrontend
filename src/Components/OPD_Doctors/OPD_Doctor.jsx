@@ -37,7 +37,7 @@ function OPD_Doctor() {
 
   const fetchDoctorsByDate = async (date) => {
     try {
-      const response = await fetch('http://localhost:8002/api/doctors/by-date', {
+      const response = await fetch('https://medicarebackend-tk87.onrender.com/api/doctors/by-date', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

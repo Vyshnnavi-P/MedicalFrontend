@@ -30,7 +30,7 @@ function Reports() {
 
   useEffect(() => {
     // Fetch reports from the backend
-    axios.get('http://localhost:8002/api/reports/getreport')
+    axios.get('https://medicarebackend-tk87.onrender.com/api/reports/getreport')
       .then(response => setReports(response.data))
       .catch(error => console.error('Error fetching reports:', error));
   }, []);

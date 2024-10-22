@@ -64,7 +64,7 @@ function Add_appointment() {
     };
 
     try {
-      const response = await fetch('http://localhost:8002/api/appointments', {
+      const response = await fetch('https://medicarebackend-tk87.onrender.com/api/appointments', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

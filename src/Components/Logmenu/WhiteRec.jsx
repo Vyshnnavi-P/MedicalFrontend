@@ -25,7 +25,7 @@ const WhiteRec = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8002/api/login', formData);
+      const response = await axios.post('https://medicarebackend-tk87.onrender.com/api/login', formData);
       alert('Login successful');
       const loginTime = new Date().toLocaleString();
       localStorage.setItem('token', response.data.token);

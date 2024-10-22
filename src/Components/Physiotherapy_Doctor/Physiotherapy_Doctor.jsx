@@ -43,7 +43,7 @@ function Physiotherapy_Doctor() {
 
  /* const fetchDoctors = async (dept, date) => {
     try {
-      const response = await fetch(`http://localhost:8002/api/doctors?department=${dept}&date=${date}`);
+      const response = await fetch(`https://medicarebackend-tk87.onrender.com/api/doctors?department=${dept}&date=${date}`);
       const data = await response.json();
       setDoctors(Array.isArray(data) ? data : []);
     } catch (error) {
@@ -53,7 +53,7 @@ function Physiotherapy_Doctor() {
 
   const fetchAvailableSlots = async (doctorId) => {
     try {
-      const response = await fetch(`http://localhost:8002/api/doctors/${doctorId}/slots?date=${selectedDate}`);
+      const response = await fetch(`https://medicarebackend-tk87.onrender.com/api/doctors/${doctorId}/slots?date=${selectedDate}`);
       const data = await response.json();
       return Array.isArray(data) ? data : [];
     } catch (error) {
@@ -66,7 +66,7 @@ function Physiotherapy_Doctor() {
 
   const fetchDoctorsByDate = async (date) => {
     try {
-      const response = await fetch('http://localhost:8002/api/doctors/by-date', {
+      const response = await fetch('https://medicarebackend-tk87.onrender.com/api/doctors/by-date', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

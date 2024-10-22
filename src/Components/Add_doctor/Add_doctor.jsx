@@ -47,7 +47,7 @@ function Add_doctor() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8002/api/doctors', formData);
+      const response = await axios.post('https://medicarebackend-tk87.onrender.com/api/doctors', formData);
       if (response.status === 201) {
         alert('Doctor added successfully!');
         navigate('/message'); // Navigate to doctors page or any other page
